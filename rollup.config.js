@@ -8,6 +8,8 @@ import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import { config as dotEnvConfig } from 'dotenv';
 
+dotEnvConfig();
+
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
@@ -29,7 +31,7 @@ export default {
 				'__myapp': JSON.stringify({
 					env: {
 						isProd: production,
-						...dotEnvConfig().parsed
+						DROPBOX_APP_KEY: process.env.DROPBOX_APP_KEY
 					}
 				})
 			}),
@@ -80,7 +82,7 @@ export default {
 				'__myapp': JSON.stringify({
 					env: {
 						isProd: production,
-						...dotEnvConfig().parsed
+						DROPBOX_APP_KEY: process.env.DROPBOX_APP_KEY
 					}
 				})
 			}),
