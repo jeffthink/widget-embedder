@@ -52,8 +52,6 @@
 
 <div id="dropbox-widget"></div>
 
-<a href="/">Home</a>
-
 <style>
 	#dropbox-widget {
 		width: 100%;
