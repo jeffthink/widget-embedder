@@ -1,12 +1,19 @@
 # Widget Embedder
 
-Collection of embeds for tools that offer non-url based embeddeding.
+I created this simple web app so that I could embed certain applications in
+iframes when there's not already an embed-optimized url you can use.
+
+I found this particularly useful for showing Dropbox files within Notion, but this approach should work in a variety of situations.
+
+I don't actively work on / maintain this, so your mileage by vary :)
 
 ## Current Embed Options
 
 * Dropbox - embed grid/list of files
 
 ## Getting Started
+
+I chose Sapper / Svelte for this app because I dig its simplicity, and was leveraging it for another tool at the same time. This same approach should work with any number of static generation tools. Anyhow, for this version, you should just need to do: 
 
 1. Clone repo
 2. Install dependencies: `npm install`
