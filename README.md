@@ -5,6 +5,8 @@ iframes when there's not already an embed-optimized url you can use.
 
 I found this particularly useful for showing Dropbox files within Notion, but this approach should work in a variety of situations.
 
+![Embed Dropbox in Notion](https://github.com/jeffthink/widget-embedder/blob/trunk/dropbox-example.png?raw=true)
+
 I don't actively work on / maintain this, so your mileage by vary :)
 
 ## Current Embed Options
@@ -44,5 +46,7 @@ I chose Sapper / Svelte for this app because I dig its simplicity, and was lever
 2. Set build command: `npm run export` with publish dir: `__sapper__/export`
 3. Add env variables (see above) via Netlify UI.
 
-From: https://dev.to/sumitkharche/how-to-deploy-sapper-app-on-netlify-12en
-Inspired by: https://blog.shorouk.dev/2020/06/how-to-embed-any-number-of-html-widgets-snippets-into-notion-app-for-free/
+# Notes
+
+* Deploying sapper apps on Netlify: https://dev.to/sumitkharche/how-to-deploy-sapper-app-on-netlify-12en
+* Inspired by: https://blog.shorouk.dev/2020/06/how-to-embed-any-number-of-html-widgets-snippets-into-notion-app-for-free/
