@@ -1,7 +1,6 @@
 # Widget Embedder
 
-I created this simple web app so that I could embed certain applications in
-iframes when there's not already an embed-optimized url you can use.
+I created this simple web app so that I could embed certain applications in iframes when there's not already an embed-optimized url you can use.
 
 I found this particularly useful for showing Dropbox files within Notion, but this approach should work in a variety of situations.
 
@@ -11,7 +10,8 @@ I don't actively work on / maintain this, so your mileage by vary :)
 
 ## Current Embed Options
 
-* Dropbox - embed grid/list of files
+* General - embed anything that only requires an iframe with url
+* Dropbox - embed grid/list of Dropbox files with preview capability
 
 ## Getting Started
 
@@ -21,6 +21,13 @@ I chose Sapper / Svelte for this app because I dig its simplicity, and was lever
 2. Install dependencies: `npm install`
 3. Create `.env` file with necessary env variables
 4. Start dev server: `npm run dev`
+
+### General Purpose
+
+For any app that gives you a url that can be shared / viewed (without accompanying login, cookies, etc.), you should be able to create a simple full width/height iframe:
+
+* Get the url link from the application you want to embed
+* Visit `{my_web_url}/widget?link={url_link_from_last_step}`
 
 ### DropBox
 
